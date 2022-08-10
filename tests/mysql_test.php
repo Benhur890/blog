@@ -18,16 +18,17 @@ function insert_teste($nome, $email, $senha): void{
 
 //Teste select banco de dados
 function buscar_teste(): void{
-    $dados = ['nome'=> $nome, 'email' => $email, 'senha' => $senha];
+    $usuarios = buscar('usuario',['id', 'nome', 'email'], [], '');
     print_r($usuarios);
 }
+
 //Teste update banco de dados
 
 function update_teste($id, $nome, $email): void{
 
     $dados = ['nome' => $nome, 'email' => $email];
     $criterio = [['id', '=', $id]];
-    atualiza ('usuario', $dados, $criterio);
+    atualiza('usuario', $dados, $criterio);
 }
 
 
