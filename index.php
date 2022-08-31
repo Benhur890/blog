@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <!--Menu //-->
                     <?php
-                        include 'includes/meu.php';
+                        include 'includes/menu.php';
                     ?>
             </div>
             <div class="col-md-10" style="padding-top: 50px;">
@@ -35,7 +35,7 @@
                     require_once 'core/sql.php';
                     require_once 'core/mysql.php';
 
-                    foreach($GET as $indice => $dado) {
+                    foreach($_GET as $indice => $dado) {
                         $$indice = limparDados($dado);
                     }
 
@@ -91,7 +91,7 @@
             <div class="col-md-12">
                 <!-- Rodapé //-->
                 <?php
-                    include 'include/rodape.php';
+                    include 'includes/rodape.php';
                 ?>
             </div>
         </div>
