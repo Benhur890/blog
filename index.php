@@ -48,7 +48,7 @@
                     if(!empty($busca)) {
                         $criterio[] = [
                             'AND',
-                            'texto',
+                            'titulo',
                             'like',
                             "%{$busca}%"
                         ];
@@ -89,7 +89,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <!-- Rodapé//-->
+                <!-- Rodapé //-->
                 <?php
                     include 'includes/rodape.php';
                 ?>
